@@ -15,7 +15,7 @@ jobs:
       run: |
         echo $MY_VAR $FIRST_NAME $MIDDLE_NAME $LAST_NAME.
 
-    - uses: actions/checkout
+    - uses: actions/checkout@main
     - name: Set up C++ compiler
       run: sudo apt-get install g++
 
