@@ -14,3 +14,9 @@ jobs:
         LAST_NAME: Octocat
       run: |
         echo $MY_VAR $FIRST_NAME $MIDDLE_NAME $LAST_NAME.
+    steps: # gcc编译运行fib.cpp
+    - name: Compile and run C++ code
+      run: |
+        g++ fib.cpp -o fib
+        ./fib
+
